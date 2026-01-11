@@ -1,19 +1,16 @@
 #include <iostream>
 
-using namespace std;
+bool canSplitEvenly(int weight) {
+    return weight > 2 && weight % 2 == 0;
+}
 
-int main ()
-{
-    int n;
-    cin>>n;
-    
-    if (n<=2||n%2!=0)
-    {
-        cout << "NO"<< endl;
+int main() {
+    int weight = 0;
+    if (!(std::cin >> weight)) {
+        std::cerr << "NO" << std::endl;
+        return 0;
     }
-    else
-    {
-        cout<<"YES"<< endl;
-    }
+
+    std::cout << (canSplitEvenly(weight) ? "YES" : "NO") << std::endl;
     return 0;
 }
