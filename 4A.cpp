@@ -13,4 +13,3 @@ int main() {
 
     std::cout << (canSplitEvenly(weight) ? "YES" : "NO") << std::endl;
     return 0;
-}
