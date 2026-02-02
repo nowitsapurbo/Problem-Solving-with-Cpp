@@ -7,17 +7,10 @@ int main()
    {
          for (int j = 0; j <=5; j++) 
          {
-              if ((i == 0 || i == 5) && (j == 0 || j == 5)) 
+              cin >> v;
+              if (v == 1) 
               {
-                cout << "U+263A ";
-              } 
-              else if (i == 0 || i == 5 || j == 0 || j == 5) 
-              {
-                cout << "U+263B ";
-              } 
-              else 
-              {
-                cout << "U+263C ";
+                   cout << abs(3 - i) + abs(3 - j)<< endl;
               }
          }
          cout << endl;
